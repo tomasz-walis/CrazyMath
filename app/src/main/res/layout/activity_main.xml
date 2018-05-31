@@ -1,0 +1,150 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    android:padding="10dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" >
+
+        <!--application title TextView-->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="15dp"
+            android:text="@string/app_name"
+            android:textColor="#ffffffff"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:fontFamily="serif" />
+
+        <!--main buttons-->
+        <Button
+            android:id="@+id/play_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:background="@drawable/buttons_background"
+            android:padding="15dp"
+            android:text="@string/btPlay"
+            android:onClick="newGame"
+            android:textColor="#ffffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignLeft="@+id/title"
+            android:layout_alignStart="@+id/title"
+            android:layout_alignRight="@+id/title"
+            android:layout_alignEnd="@+id/title"
+            android:fontFamily="casual" />
+
+        <Button
+            android:id="@+id/continue_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/play_btn"
+            android:background="@drawable/buttons_background"
+            android:padding="15dp"
+            android:text="@string/btContinue"
+            android:onClick="continueGame"
+            android:textColor="#ffffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignLeft="@+id/title"
+            android:layout_alignStart="@+id/title"
+            android:layout_alignRight="@+id/play_btn"
+            android:layout_alignEnd="@+id/play_btn"
+            android:fontFamily="casual" />
+
+
+        <Button
+            android:id="@+id/help_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/continue_btn"
+            android:background="@drawable/buttons_background"
+            android:padding="15dp"
+            android:text="@string/btAbout"
+            android:onClick="showHelp"
+            android:textColor="#ffffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignLeft="@+id/continue_btn"
+            android:layout_alignStart="@+id/continue_btn"
+            android:layout_alignRight="@+id/continue_btn"
+            android:layout_alignEnd="@+id/continue_btn"
+            android:fontFamily="casual" />
+
+        <Button
+            android:id="@+id/high_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/help_btn"
+            android:background="@drawable/buttons_background"
+            android:padding="15dp"
+            android:text="@string/btHighScores"
+            android:onClick="showHighScores"
+            android:textColor="#ffffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignLeft="@+id/help_btn"
+            android:layout_alignStart="@+id/help_btn"
+            android:layout_alignRight="@+id/help_btn"
+            android:layout_alignEnd="@+id/help_btn"
+            android:fontFamily="casual" />
+
+        <Button
+            android:id="@+id/exit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/high_btn"
+            android:background="@drawable/buttons_background"
+            android:padding="15dp"
+            android:text="@string/btExit"
+            android:textColor="#ffffffff"
+            android:textSize="20sp"
+            android:onClick="exitApp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignRight="@+id/high_btn"
+            android:layout_alignEnd="@+id/high_btn"
+            android:layout_alignLeft="@+id/high_btn"
+            android:layout_alignStart="@+id/high_btn"
+            android:fontFamily="casual" />
+
+        <Switch
+            android:id="@+id/hintsCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ENABLE HINTS ! "
+            android:scaleX="1.3"
+            android:scaleY="1.3"
+            android:layout_below="@+id/exit_btn"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignRight="@+id/exit_btn"
+            android:layout_alignEnd="@+id/exit_btn"
+            android:layout_alignLeft="@+id/exit_btn"
+            android:layout_alignStart="@+id/exit_btn"
+            android:onClick="passSwitch"
+            android:textColor="#ffffffff"
+            android:fontFamily="sans-serif"
+            android:checked="false" />
+    </RelativeLayout>
+
+</ScrollView>

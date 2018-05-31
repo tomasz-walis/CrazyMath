@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="@string/choseLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/levelText"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:fontFamily="casual"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btNovice"
+        android:gravity="center"
+        android:onClick="startNoviceGame"
+        android:textSize="24sp"
+        android:textStyle="normal|bold|italic" />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/btEasy"
+        android:onClick="startEasyGame"
+        android:textSize="24sp"
+        android:textStyle="normal|bold|italic" />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btMedium"
+        android:gravity="center"
+        android:onClick="startMediumGame"
+        android:textSize="24sp"
+        android:textStyle="normal|bold|italic" />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btGuru"
+        android:gravity="center"
+        android:onClick="startGuruGame"
+        android:textSize="24sp"
+        android:textStyle="normal|bold|italic" />
+</LinearLayout>

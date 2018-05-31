@@ -1,0 +1,46 @@
+<resources>
+    <!--application name-->
+    <string name="app_name">CRAZY MATH !</string>
+    <!--text for the about dialog-->
+    <string name="help_info">
+        Crazy Math! is an arithmetic game.\n\n
+        Choose "Novice", "Easy", "Medium", "Hard", "Guru" level to begin.\n\
+        Answer the question by typing the number on numeric pad displayed and confirm your answer by pressing # button.\n
+        Press the DEL button to clear an existing answer, Minus button to negate the answer.\n
+        Crazy Math does not follow mathematical rules, expression is evaluated from left to right.\n
+        Each questionEvaluation may be an addition, subtraction, multiplication or division.\n\n
+        Your scores will automatically be saved into the High Scores.</string>
+
+    <string name="result">result</string>
+    <string name="Score0">Score: 0</string>
+    <string name="OplusO">0 + 0</string>
+
+    <!--buttons strings-->
+    <string name="btn0">0</string>
+    <string name="btn1">1</string>
+    <string name="btn2">2</string>
+    <string name="btn3">3</string>
+    <string name="btn4">4</string>
+    <string name="btn5">5</string>
+    <string name="btn6">6</string>
+    <string name="btn7">7</string>
+    <string name="btn8">8</string>
+    <string name="btn9">9</string>
+    <string name="Del">DEL</string>
+    <string name="Enter">#</string>
+    <string name="Minus">-</string>
+
+    <!--strings for level buttons-->
+    <string name="choseLevel">CHOSE LEVEL: </string>
+    <string name="btNovice">NOVICE</string>
+    <string name="btEasy">EASY</string>
+    <string name="btMedium">MEDIUM</string>
+    <string name="btGuru">GURU</string>
+
+    <!--strings for main buttons-->
+    <string name="btPlay">NEW GAME</string>
+    <string name="btContinue">CONTINUE</string>
+    <string name="btAbout">ABOUT</string>
+    <string name="btHighScores">HIGH SCORES</string>
+    <string name="btExit">EXIT</string>
+</resources>
